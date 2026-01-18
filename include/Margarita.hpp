@@ -7,8 +7,9 @@ class Margarita : public Pizza {
     public:
         using Pizza::Pizza;
 
-        void description() const override;
+        double cost() override;
 
+        std::string description() override;
 };  
 
 #endif

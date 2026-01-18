@@ -1,17 +1,15 @@
 #ifndef CHEESE_HPP
 #define CHEESE_HPP
 
-#include <iostream>
-
 #include "Topping.hpp"
 
 class Cheese : public Topping {
     public:
         using Topping::Topping;
 
-        void addCost() override;
+        double cost() override;
 
-        void addDescription() override;
+        std::string description() override;
 };
 
 #endif

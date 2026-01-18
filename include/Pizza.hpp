@@ -6,16 +6,12 @@
 #include <string>
 
 class Pizza {
-    private:
-        double m_price;
-        std::vector<std::string> m_toppingDescriptions;
-
     public:  
-        void addDescription(const std::string& topping);
-        virtual void description() const;
+        virtual ~Pizza() = default;
 
-        void addCost(double price);
-        double cost() { return m_price; }
+        virtual std::string description() = 0;
+
+        virtual double cost() = 0;
 };
 
 #endif
