@@ -1,9 +1,9 @@
 #include "Cheese.hpp"
 
-void Cheese::addCost() {
-    m_pizza->addCost(2);
+double Cheese::cost() {
+    return m_pizza->cost() + 2.0;
 }
 
-void Cheese::addDescription() {
-    m_pizza->addDescription("Cheese");
+std::string Cheese::description() {
+    return m_pizza->description() + ", Cheese";
 }

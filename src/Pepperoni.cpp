@@ -1,6 +1,9 @@
 #include "Pepperoni.hpp"
 
-void Pepperoni::description() const {
-    std::cout << "Pepperoni ";
-    Pizza::description();
+double Pepperoni::cost() {
+    return 4.0;
+}
+
+std::string Pepperoni::description() {
+    return "Pepperoni";
 }

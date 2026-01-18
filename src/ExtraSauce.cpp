@@ -1,9 +1,9 @@
 #include "ExtraSauce.hpp"
 
-void ExtraSauce::addCost() {
-    m_pizza->addCost(3);
+double ExtraSauce::cost() {
+    return m_pizza->cost() + 0.5;
 }
 
-void ExtraSauce::addDescription() {
-    m_pizza->addDescription("Cheese");
+std::string ExtraSauce::description() {
+    return m_pizza->description() + ", ExtraSauce";
 }

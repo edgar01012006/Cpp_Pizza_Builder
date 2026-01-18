@@ -1,6 +1,9 @@
 #include "Margarita.hpp"
 
-void Margarita::description() const {
-    std::cout << "Margarita ";
-    Pizza::description();
+double Margarita::cost() {
+    return 5.0;
+}
+
+std::string Margarita::description() {
+    return "Margarita";
 }
